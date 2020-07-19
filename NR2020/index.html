@@ -375,60 +375,60 @@
     <!-- // end .section -->
 
 
-    <div class="form-box">
-        <div class="form-top">
-          <div class="form-top-left">
-          <h3>Sign up now</h3>
-      <p>Fill in the form below to get instant access:</p>
-                                      </div>
-       <div class="form-top-right">
-      <i class="fa fa-pencil"></i>
-         </div>
+
+    <div id="Signup" class="section">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    			
+                    <h4 class="modal-title">Member Login</h4>	
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="http://notesready.com/Register_cntrl/insertdata" method="post" id="Signup" enctype="multipart/form-data">                                        <div class="form-group">
+                        <label class="sr-only" for="">Full Name</label>
+                        <input type="text" name="fname" required="required" placeholder="Enter Your Full Name..." class="form-first-name form-control" id="form-first-name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="">User Name</label>
+                        <input type="text" name="username" required="required" placeholder="User Name..." class="form-last-name form-control" id="form-last-name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="f">Password</label>
+                        <input type="password" name="password" required="required" placeholder="Password" class="form-last-name form-control" id="form-last-name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="">Phone</label>
+                        <input type="text" pattern="[1-9]{1}[0-9]{9}" maxlength="10" name="phone" required="required" placeholder="Phone Number" class="form-last-name form-control" id="form-last-name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="">Email</label>
+                        <input type="email" name="email" required="required" placeholder="Email..." class="form-email form-control" id="form-email"><span id="msg"> </span>
+                    </div>
+                  <div class="form-group">
+                        <label class="sr-only" for="">Branch</label>
+                        <input type="text" name="branch" required="required" placeholder="Branch" class="form-last-name form-control" id="form-last-name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="">College</label>
+                        <input type="text" name="college" required="required" placeholder="College Name..." class="form-last-name form-control" id="form-last-name">
+                    </div>
+                    <div class="">
+                        <input type="file" name="pimage" placeholder="Profile Image" class=" form-control1" id="form-last-name"><span class="text1"> Upload Profile Image</span>
+                    </div>
+
+           <input type="submit" class="btn1 btn btn-primary" value="Sign me up!" onblur="check_if_exists()" style="
+           padding: 10px;font-size: 20px;border: 1px solid;color: white;">
+                    <input type="reset" value="Clear Form" class=" btn1 btn btn-danger" style="
+           padding: 10px;font-size: 20px;border: 1px solid;">
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
         </div>
-       <div class="form-bottom">
-     <form action="http://notesready.com/Register_cntrl/insertdata" method="post" id="Signup" enctype="multipart/form-data">                                        <div class="form-group">
-                                              <label class="sr-only" for="">Full Name</label>
-                                              <input type="text" name="fname" required="required" placeholder="Enter Your Full Name..." class="form-first-name form-control" id="form-first-name">
-                                          </div>
-                                          <div class="form-group">
-                                              <label class="sr-only" for="">User Name</label>
-                                              <input type="text" name="username" required="required" placeholder="User Name..." class="form-last-name form-control" id="form-last-name">
-                                          </div>
-                                          <div class="form-group">
-                                              <label class="sr-only" for="f">Password</label>
-                                              <input type="password" name="password" required="required" placeholder="Password" class="form-last-name form-control" id="form-last-name">
-                                          </div>
-                                          <div class="form-group">
-                                              <label class="sr-only" for="">Phone</label>
-                                              <input type="text" pattern="[1-9]{1}[0-9]{9}" maxlength="10" name="phone" required="required" placeholder="Phone Number" class="form-last-name form-control" id="form-last-name">
-                                          </div>
-                                          <div class="form-group">
-                                              <label class="sr-only" for="">Email</label>
-                                              <input type="email" name="email" required="required" placeholder="Email..." class="form-email form-control" id="form-email"><span id="msg"> </span>
-                                          </div>
-                                        <div class="form-group">
-                                              <label class="sr-only" for="">Branch</label>
-                                              <input type="text" name="branch" required="required" placeholder="Branch" class="form-last-name form-control" id="form-last-name">
-                                          </div>
-                                          <div class="form-group">
-                                              <label class="sr-only" for="">College</label>
-                                              <input type="text" name="college" required="required" placeholder="College Name..." class="form-last-name form-control" id="form-last-name">
-                                          </div>
-                                          <div class="">
-                                              <input type="file" name="pimage" placeholder="Profile Image" class=" form-control1" id="form-last-name"><span class="text1"> Upload Profile Image</span>
-                                          </div>
-  
-                                 <input type="submit" class="btn1 btn btn-primary" value="Sign me up!" onblur="check_if_exists()" style="
-                                 padding: 10px;font-size: 20px;border: 1px solid;color: white;">
-                                          <input type="reset" value="Clear Form" class=" btn1 btn btn-danger" style="
-                                 padding: 10px;font-size: 20px;border: 1px solid;">
-                                      </form>
-  
-                                      
-                                  </div>
-                              </div>
-
-
+    </div> 
     <div id="login" class="section">
         <div class="modal-dialog modal-login">
             <div class="modal-content">
