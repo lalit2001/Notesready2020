@@ -94,8 +94,12 @@ echo "<script>alert('Email not register with us');</script>";
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,200italic,300italic,400italic,600italic|Lora:400,700,400italic,700italic|Raleway:400,500,300,600,700,200,100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="main">\
-<a class="navbar-brand" href="../"><img src="../images/logo.png" class="img-fluid" alt="logo" width="200px"></a>
+
+<header class="bg-gradient">
+	
+</header>
+<div class="main">
+<a class="navbar-brand" href="../index.html"><img src="images/logo.png" class="img-fluid" alt="logo" width="200px"></a>
 		<h1>Registration and Login System</h1>
 	 <div class="sap_tabs">	
 			<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
@@ -114,9 +118,9 @@ echo "<script>alert('Email not register with us');</script>";
 					
 						<div class="register">
 							<form name="registration" method="post" action="" enctype="multipart/form-data">
-								<p>First Name </p>
+								<p>Name </p>
 								<input type="text" class="text" value=""  name="fname" required >
-								<p>Last Name </p>
+								<p>Branch</p>
 								<input type="text" class="text" value="" name="lname"  required >
 								<p>Email Address </p>
 								<input type="text" class="text" value="" name="email"  >
@@ -124,11 +128,13 @@ echo "<script>alert('Email not register with us');</script>";
 								<input type="password" value="" name="password" required>
 										<p>Contact No. </p>
 								<input type="text" value="" name="contact"  required>
+
 								<div class="sign-up">
 									<input type="reset" value="Reset">
 									<input type="submit" name="signup"  value="Sign Up" >
 									<div class="clear"> </div>
 								</div>
+								
 							</form>
 
 						</div>
